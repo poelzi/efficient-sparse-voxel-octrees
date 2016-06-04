@@ -1,0 +1,89 @@
+newmtl initialShadingGroup
+illum 4
+Kd 0.50 0.50 0.50
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl lambert2SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd red-tile-texture.tga
+disp -mm -.95 .02 red-tile-bump.tga
+Ni 1.00
+newmtl roseRed1FlowerShaderSG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd redPetal.tga
+Ni 1.00
+Ks 0.10 0.18 0.19
+Ns 0.00
+newmtl roseRed1LeafShaderSG
+illum 4
+Kd 1.00 1.00 1.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd leafSerrate.tga
+Ni 1.00
+Ks 0.06 0.11 0.12
+Ns 0.00
+newmtl roseRed1ShaderSG
+illum 4
+Kd 0.21 0.25 0.18
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.17 0.29 0.31
+Ns 0.00
+newmtl rosesClimbing1FlowerShaderSG
+illum 4
+Kd 0.95 0.95 0.95
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 0.00
+newmtl rosesClimbing1LeafShaderSG
+illum 4
+Kd 1.00 1.00 1.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd leafSerrate.tga
+Ni 1.00
+Ks 0.06 0.11 0.12
+Ns 0.00
+newmtl rosesClimbing1ShaderSG
+illum 4
+Kd 0.21 0.25 0.18
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.17 0.29 0.31
+Ns 0.00
+newmtl tigerBud1FlowerShaderSG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd tigerPetal.tga
+Ni 1.00
+Ks 0.26 0.18 0.18
+Ns 3.95
+newmtl tigerBud1LeafShaderSG
+illum 4
+Kd 0.18 0.25 0.05
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.11 0.07 0.08
+Ns 3.95
+newmtl tigerBud1ShaderSG
+illum 4
+Kd 0.03 0.22 0.02
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.15 0.10 0.11
+Ns 3.95
+

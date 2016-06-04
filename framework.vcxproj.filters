@@ -1,0 +1,287 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="base">
+      <UniqueIdentifier>{411c605d-0596-4335-aeac-46f90471fe5c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gui">
+      <UniqueIdentifier>{c0c9dda7-0fb7-440e-b851-41269d115eaa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3d">
+      <UniqueIdentifier>{8d5a3094-6788-4e99-a98c-a4b54ba24f05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gpu">
+      <UniqueIdentifier>{fce5415b-1c03-44b2-9122-09dd15ce0c41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="io">
+      <UniqueIdentifier>{39a8d526-3d2d-466c-841d-a65535bc8a49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3rdparty">
+      <UniqueIdentifier>{70c40258-0255-45a7-941b-0d0931949100}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3rdparty\lodepng">
+      <UniqueIdentifier>{4954c8eb-cf03-4a30-8494-ac296852e533}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\framework\base\Array.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\base\BinaryHeap.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\base\Defs.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\base\Deque.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\base\DLLImports.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\base\Hash.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\base\Main.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\base\Math.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\base\MulticoreLauncher.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\base\Random.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\base\Sort.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\base\String.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\base\Thread.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\base\Timer.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\base\UnionFind.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\gui\CommonControls.cpp">
+      <Filter>gui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\gui\Image.cpp">
+      <Filter>gui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\gui\Keys.cpp">
+      <Filter>gui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\gui\Window.cpp">
+      <Filter>gui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\3d\CameraControls.cpp">
+      <Filter>3d</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\3d\ConvexPolyhedron.cpp">
+      <Filter>3d</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\3d\Mesh.cpp">
+      <Filter>3d</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\3d\Texture.cpp">
+      <Filter>3d</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\3d\TextureAtlas.cpp">
+      <Filter>3d</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\gpu\Buffer.cpp">
+      <Filter>gpu</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\gpu\CudaCompiler.cpp">
+      <Filter>gpu</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\gpu\CudaModule.cpp">
+      <Filter>gpu</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\gpu\GLContext.cpp">
+      <Filter>gpu</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\io\AviExporter.cpp">
+      <Filter>io</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\io\File.cpp">
+      <Filter>io</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\io\ImageBinaryIO.cpp">
+      <Filter>io</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\io\ImageBmpIO.cpp">
+      <Filter>io</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\io\ImageLodePngIO.cpp">
+      <Filter>io</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\io\ImageRawPngIO.cpp">
+      <Filter>io</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\io\ImageTargaIO.cpp">
+      <Filter>io</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\io\ImageTiffIO.cpp">
+      <Filter>io</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\io\MeshBinaryIO.cpp">
+      <Filter>io</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\io\MeshWavefrontIO.cpp">
+      <Filter>io</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\io\StateDump.cpp">
+      <Filter>io</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\io\Stream.cpp">
+      <Filter>io</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\3rdparty\lodepng\lodepng.cpp">
+      <Filter>3rdparty\lodepng</Filter>
+    </ClCompile>
+    <ClCompile Include="src\framework\gpu\CudaKernel.cpp">
+      <Filter>gpu</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\framework\base\Array.hpp">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\base\BinaryHeap.hpp">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\base\Defs.hpp">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\base\Deque.hpp">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\base\DLLImports.hpp">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\base\Hash.hpp">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\base\Main.hpp">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\base\Math.hpp">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\base\MulticoreLauncher.hpp">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\base\Random.hpp">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\base\Sort.hpp">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\base\String.hpp">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\base\Thread.hpp">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\base\Timer.hpp">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\base\UnionFind.hpp">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\gui\CommonControls.hpp">
+      <Filter>gui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\gui\Image.hpp">
+      <Filter>gui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\gui\Keys.hpp">
+      <Filter>gui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\gui\Window.hpp">
+      <Filter>gui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\3d\CameraControls.hpp">
+      <Filter>3d</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\3d\ConvexPolyhedron.hpp">
+      <Filter>3d</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\3d\Mesh.hpp">
+      <Filter>3d</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\3d\Texture.hpp">
+      <Filter>3d</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\3d\TextureAtlas.hpp">
+      <Filter>3d</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\gpu\Buffer.hpp">
+      <Filter>gpu</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\gpu\CudaCompiler.hpp">
+      <Filter>gpu</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\gpu\CudaModule.hpp">
+      <Filter>gpu</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\gpu\GLContext.hpp">
+      <Filter>gpu</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\io\AviExporter.hpp">
+      <Filter>io</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\io\File.hpp">
+      <Filter>io</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\io\ImageBinaryIO.hpp">
+      <Filter>io</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\io\ImageBmpIO.hpp">
+      <Filter>io</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\io\ImageLodePngIO.hpp">
+      <Filter>io</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\io\ImageRawPngIO.hpp">
+      <Filter>io</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\io\ImageTargaIO.hpp">
+      <Filter>io</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\io\ImageTiffIO.hpp">
+      <Filter>io</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\io\MeshBinaryIO.hpp">
+      <Filter>io</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\io\MeshWavefrontIO.hpp">
+      <Filter>io</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\io\StateDump.hpp">
+      <Filter>io</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\io\Stream.hpp">
+      <Filter>io</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\3rdparty\lodepng\lodepng.h">
+      <Filter>3rdparty\lodepng</Filter>
+    </ClInclude>
+    <ClInclude Include="src\framework\gpu\CudaKernel.hpp">
+      <Filter>gpu</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\framework\base\DLLImports.inl">
+      <Filter>base</Filter>
+    </None>
+  </ItemGroup>
+</Project>

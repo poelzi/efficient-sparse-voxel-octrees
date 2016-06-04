@@ -1,0 +1,285 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8E0B71BD-6F14-4F0C-AC34-45985043856F}</ProjectGuid>
+    <RootNamespace>framework</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>NotSet</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>NotSet</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>NotSet</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>NotSet</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">build\$(Platform)_$(Configuration)\$(ProjectName)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">build\$(Platform)_$(Configuration)\$(ProjectName)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">build\$(Platform)_$(Configuration)\$(ProjectName)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">build\$(Platform)_$(Configuration)\$(ProjectName)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">build\$(Platform)_$(Configuration)\$(ProjectName)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">build\$(Platform)_$(Configuration)\$(ProjectName)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">build\$(Platform)_$(Configuration)\$(ProjectName)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">build\$(Platform)_$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <BuildLog>
+      <Path>$(IntDir)BuildLog.htm</Path>
+    </BuildLog>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>src/framework;$(CUDA_INC_PATH);$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Lib>
+      <AdditionalOptions>/ignore:4006 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <BuildLog>
+      <Path>$(IntDir)BuildLog.htm</Path>
+    </BuildLog>
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>src/framework;$(CUDA_INC_PATH);$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Lib>
+      <AdditionalOptions>/ignore:4006 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <BuildLog>
+      <Path>$(IntDir)BuildLog.htm</Path>
+    </BuildLog>
+    <ClCompile>
+      <Optimization>Full</Optimization>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>src/framework;$(CUDA_INC_PATH);$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Lib>
+      <AdditionalOptions>/ignore:4006 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <BuildLog>
+      <Path>$(IntDir)BuildLog.htm</Path>
+    </BuildLog>
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>Full</Optimization>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>src/framework;$(CUDA_INC_PATH);$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Lib>
+      <AdditionalOptions>/ignore:4006 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\framework\base\Array.cpp" />
+    <ClCompile Include="src\framework\base\BinaryHeap.cpp" />
+    <ClCompile Include="src\framework\base\Defs.cpp" />
+    <ClCompile Include="src\framework\base\Deque.cpp" />
+    <ClCompile Include="src\framework\base\DLLImports.cpp" />
+    <ClCompile Include="src\framework\base\Hash.cpp" />
+    <ClCompile Include="src\framework\base\Main.cpp" />
+    <ClCompile Include="src\framework\base\Math.cpp" />
+    <ClCompile Include="src\framework\base\MulticoreLauncher.cpp" />
+    <ClCompile Include="src\framework\base\Random.cpp" />
+    <ClCompile Include="src\framework\base\Sort.cpp" />
+    <ClCompile Include="src\framework\base\String.cpp" />
+    <ClCompile Include="src\framework\base\Thread.cpp" />
+    <ClCompile Include="src\framework\base\Timer.cpp" />
+    <ClCompile Include="src\framework\base\UnionFind.cpp" />
+    <ClCompile Include="src\framework\gpu\CudaKernel.cpp" />
+    <ClCompile Include="src\framework\gui\CommonControls.cpp" />
+    <ClCompile Include="src\framework\gui\Image.cpp" />
+    <ClCompile Include="src\framework\gui\Keys.cpp" />
+    <ClCompile Include="src\framework\gui\Window.cpp" />
+    <ClCompile Include="src\framework\3d\CameraControls.cpp" />
+    <ClCompile Include="src\framework\3d\ConvexPolyhedron.cpp" />
+    <ClCompile Include="src\framework\3d\Mesh.cpp" />
+    <ClCompile Include="src\framework\3d\Texture.cpp" />
+    <ClCompile Include="src\framework\3d\TextureAtlas.cpp" />
+    <ClCompile Include="src\framework\gpu\Buffer.cpp" />
+    <ClCompile Include="src\framework\gpu\CudaCompiler.cpp" />
+    <ClCompile Include="src\framework\gpu\CudaModule.cpp" />
+    <ClCompile Include="src\framework\gpu\GLContext.cpp" />
+    <ClCompile Include="src\framework\io\AviExporter.cpp" />
+    <ClCompile Include="src\framework\io\File.cpp" />
+    <ClCompile Include="src\framework\io\ImageBinaryIO.cpp" />
+    <ClCompile Include="src\framework\io\ImageBmpIO.cpp" />
+    <ClCompile Include="src\framework\io\ImageLodePngIO.cpp" />
+    <ClCompile Include="src\framework\io\ImageRawPngIO.cpp" />
+    <ClCompile Include="src\framework\io\ImageTargaIO.cpp" />
+    <ClCompile Include="src\framework\io\ImageTiffIO.cpp" />
+    <ClCompile Include="src\framework\io\MeshBinaryIO.cpp" />
+    <ClCompile Include="src\framework\io\MeshWavefrontIO.cpp" />
+    <ClCompile Include="src\framework\io\StateDump.cpp" />
+    <ClCompile Include="src\framework\io\Stream.cpp" />
+    <ClCompile Include="src\framework\3rdparty\lodepng\lodepng.cpp">
+      <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Level2</WarningLevel>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">4530;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Level2</WarningLevel>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4530;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Level2</WarningLevel>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">4530;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Level2</WarningLevel>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4530;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\framework\base\Array.hpp" />
+    <ClInclude Include="src\framework\base\BinaryHeap.hpp" />
+    <ClInclude Include="src\framework\base\Defs.hpp" />
+    <ClInclude Include="src\framework\base\Deque.hpp" />
+    <ClInclude Include="src\framework\base\DLLImports.hpp" />
+    <ClInclude Include="src\framework\base\Hash.hpp" />
+    <ClInclude Include="src\framework\base\Main.hpp" />
+    <ClInclude Include="src\framework\base\Math.hpp" />
+    <ClInclude Include="src\framework\base\MulticoreLauncher.hpp" />
+    <ClInclude Include="src\framework\base\Random.hpp" />
+    <ClInclude Include="src\framework\base\Sort.hpp" />
+    <ClInclude Include="src\framework\base\String.hpp" />
+    <ClInclude Include="src\framework\base\Thread.hpp" />
+    <ClInclude Include="src\framework\base\Timer.hpp" />
+    <ClInclude Include="src\framework\base\UnionFind.hpp" />
+    <ClInclude Include="src\framework\gpu\CudaKernel.hpp" />
+    <ClInclude Include="src\framework\gui\CommonControls.hpp" />
+    <ClInclude Include="src\framework\gui\Image.hpp" />
+    <ClInclude Include="src\framework\gui\Keys.hpp" />
+    <ClInclude Include="src\framework\gui\Window.hpp" />
+    <ClInclude Include="src\framework\3d\CameraControls.hpp" />
+    <ClInclude Include="src\framework\3d\ConvexPolyhedron.hpp" />
+    <ClInclude Include="src\framework\3d\Mesh.hpp" />
+    <ClInclude Include="src\framework\3d\Texture.hpp" />
+    <ClInclude Include="src\framework\3d\TextureAtlas.hpp" />
+    <ClInclude Include="src\framework\gpu\Buffer.hpp" />
+    <ClInclude Include="src\framework\gpu\CudaCompiler.hpp" />
+    <ClInclude Include="src\framework\gpu\CudaModule.hpp" />
+    <ClInclude Include="src\framework\gpu\GLContext.hpp" />
+    <ClInclude Include="src\framework\io\AviExporter.hpp" />
+    <ClInclude Include="src\framework\io\File.hpp" />
+    <ClInclude Include="src\framework\io\ImageBinaryIO.hpp" />
+    <ClInclude Include="src\framework\io\ImageBmpIO.hpp" />
+    <ClInclude Include="src\framework\io\ImageLodePngIO.hpp" />
+    <ClInclude Include="src\framework\io\ImageRawPngIO.hpp" />
+    <ClInclude Include="src\framework\io\ImageTargaIO.hpp" />
+    <ClInclude Include="src\framework\io\ImageTiffIO.hpp" />
+    <ClInclude Include="src\framework\io\MeshBinaryIO.hpp" />
+    <ClInclude Include="src\framework\io\MeshWavefrontIO.hpp" />
+    <ClInclude Include="src\framework\io\StateDump.hpp" />
+    <ClInclude Include="src\framework\io\Stream.hpp" />
+    <ClInclude Include="src\framework\3rdparty\lodepng\lodepng.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\framework\base\DLLImports.inl" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

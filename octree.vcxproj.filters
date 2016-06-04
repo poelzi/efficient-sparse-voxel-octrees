@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="build">
+      <UniqueIdentifier>{090d31e8-37d8-4fe1-b7df-10afab67e42f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cuda">
+      <UniqueIdentifier>{e6f089db-d609-43cb-823e-942f921e651a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="io">
+      <UniqueIdentifier>{639abd0a-3bcd-46ab-8246-4718c21b9ba9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="render">
+      <UniqueIdentifier>{160cc253-b343-47ae-97e8-126318321507}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\octree\build\AttribFilter.cpp">
+      <Filter>build</Filter>
+    </ClCompile>
+    <ClCompile Include="src\octree\build\BuilderBase.cpp">
+      <Filter>build</Filter>
+    </ClCompile>
+    <ClCompile Include="src\octree\build\BuilderMesh.cpp">
+      <Filter>build</Filter>
+    </ClCompile>
+    <ClCompile Include="src\octree\build\ContourShaper.cpp">
+      <Filter>build</Filter>
+    </ClCompile>
+    <ClCompile Include="src\octree\build\DisplacementMap.cpp">
+      <Filter>build</Filter>
+    </ClCompile>
+    <ClCompile Include="src\octree\build\MeshBuilder.cpp">
+      <Filter>build</Filter>
+    </ClCompile>
+    <ClCompile Include="src\octree\build\TextureSampler.cpp">
+      <Filter>build</Filter>
+    </ClCompile>
+    <ClCompile Include="src\octree\io\AttachIO.cpp">
+      <Filter>io</Filter>
+    </ClCompile>
+    <ClCompile Include="src\octree\io\ClusteredFile.cpp">
+      <Filter>io</Filter>
+    </ClCompile>
+    <ClCompile Include="src\octree\io\MemoryManager.cpp">
+      <Filter>io</Filter>
+    </ClCompile>
+    <ClCompile Include="src\octree\io\OctreeFile.cpp">
+      <Filter>io</Filter>
+    </ClCompile>
+    <ClCompile Include="src\octree\io\OctreeRuntime.cpp">
+      <Filter>io</Filter>
+    </ClCompile>
+    <ClCompile Include="src\octree\render\CudaRenderer.cpp">
+      <Filter>render</Filter>
+    </ClCompile>
+    <ClCompile Include="src\octree\render\PixelTable.cpp">
+      <Filter>render</Filter>
+    </ClCompile>
+    <ClCompile Include="src\octree\AmbientProcessor.cpp" />
+    <ClCompile Include="src\octree\App.cpp" />
+    <ClCompile Include="src\octree\Benchmark.cpp" />
+    <ClCompile Include="src\octree\BenchmarkContext.cpp" />
+    <ClCompile Include="src\octree\OctreeManager.cpp" />
+    <ClCompile Include="src\octree\Util.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\octree\build\AttribFilter.hpp">
+      <Filter>build</Filter>
+    </ClInclude>
+    <ClInclude Include="src\octree\build\BuilderBase.hpp">
+      <Filter>build</Filter>
+    </ClInclude>
+    <ClInclude Include="src\octree\build\BuilderMesh.hpp">
+      <Filter>build</Filter>
+    </ClInclude>
+    <ClInclude Include="src\octree\build\ContourShaper.hpp">
+      <Filter>build</Filter>
+    </ClInclude>
+    <ClInclude Include="src\octree\build\DisplacementMap.hpp">
+      <Filter>build</Filter>
+    </ClInclude>
+    <ClInclude Include="src\octree\build\MeshBuilder.hpp">
+      <Filter>build</Filter>
+    </ClInclude>
+    <ClInclude Include="src\octree\build\TextureSampler.hpp">
+      <Filter>build</Filter>
+    </ClInclude>
+    <ClInclude Include="src\octree\cuda\Ambient.hpp">
+      <Filter>cuda</Filter>
+    </ClInclude>
+    <ClInclude Include="src\octree\cuda\Render.hpp">
+      <Filter>cuda</Filter>
+    </ClInclude>
+    <ClInclude Include="src\octree\io\AttachIO.hpp">
+      <Filter>io</Filter>
+    </ClInclude>
+    <ClInclude Include="src\octree\io\ClusteredFile.hpp">
+      <Filter>io</Filter>
+    </ClInclude>
+    <ClInclude Include="src\octree\io\MemoryManager.hpp">
+      <Filter>io</Filter>
+    </ClInclude>
+    <ClInclude Include="src\octree\io\OctreeFile.hpp">
+      <Filter>io</Filter>
+    </ClInclude>
+    <ClInclude Include="src\octree\io\OctreeRuntime.hpp">
+      <Filter>io</Filter>
+    </ClInclude>
+    <ClInclude Include="src\octree\render\CudaRenderer.hpp">
+      <Filter>render</Filter>
+    </ClInclude>
+    <ClInclude Include="src\octree\render\PixelTable.hpp">
+      <Filter>render</Filter>
+    </ClInclude>
+    <ClInclude Include="src\octree\AmbientProcessor.hpp" />
+    <ClInclude Include="src\octree\App.hpp" />
+    <ClInclude Include="src\octree\Benchmark.hpp" />
+    <ClInclude Include="src\octree\BenchmarkContext.hpp" />
+    <ClInclude Include="src\octree\OctreeManager.hpp" />
+    <ClInclude Include="src\octree\Util.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\octree\cuda\AttribLookup.inl">
+      <Filter>cuda</Filter>
+    </None>
+    <None Include="src\octree\cuda\Raycast.inl">
+      <Filter>cuda</Filter>
+    </None>
+    <None Include="src\octree\cuda\Util.inl">
+      <Filter>cuda</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuildStep Include="src\octree\cuda\Ambient.cu">
+      <Filter>cuda</Filter>
+    </CustomBuildStep>
+    <CustomBuildStep Include="src\octree\cuda\Render.cu">
+      <Filter>cuda</Filter>
+    </CustomBuildStep>
+  </ItemGroup>
+</Project>
